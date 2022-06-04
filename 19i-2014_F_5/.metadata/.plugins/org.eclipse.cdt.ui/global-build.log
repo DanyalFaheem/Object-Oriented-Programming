@@ -1,0 +1,1642 @@
+16:11:19 **** Build of configuration Debug for project q1 ****
+make all 
+Building file: ../src/SimpleGraph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleGraph.d" -MT"src/SimpleGraph.o" -o "src/SimpleGraph.o" "../src/SimpleGraph.cpp"
+../src/SimpleGraph.cpp:12:1: error: default argument given for parameter 1 of ‘SimpleGraph::SimpleGraph(int)’ [-fpermissive]
+   12 | SimpleGraph::SimpleGraph(int n = 5){
+      | ^~~~~~~~~~~
+In file included from ../src/SimpleGraph.cpp:8:
+../src/SimpleGraph.h:19:2: note: previous specification in ‘SimpleGraph::SimpleGraph(int)’ here
+   19 |  SimpleGraph(int n=5); // overloaded constructor to create the array of Node
+      |  ^~~~~~~~~~~
+../src/SimpleGraph.cpp: In member function ‘void SimpleGraph::printneighbor(int)’:
+../src/SimpleGraph.cpp:60:62: error: cannot convert ‘SimpleNode’ to ‘SimpleNode*’ in initialization
+   60 |   SimpleNode* ptr = allnodes[index].getneighbor().getneighbor();
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+      |                                                              |
+      |                                                              SimpleNode
+make: *** [src/subdir.mk:26: src/SimpleGraph.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:12:01 **** Incremental Build of configuration Debug for project q1 ****
+make all 
+Building file: ../src/SimpleGraph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleGraph.d" -MT"src/SimpleGraph.o" -o "src/SimpleGraph.o" "../src/SimpleGraph.cpp"
+../src/SimpleGraph.cpp: In constructor ‘SimpleGraph::SimpleGraph(int)’:
+../src/SimpleGraph.cpp:14:13: error: ‘n’ was not declared in this scope
+   14 |  numNodes = n;
+      |             ^
+../src/SimpleGraph.cpp: In member function ‘void SimpleGraph::printneighbor(int)’:
+../src/SimpleGraph.cpp:60:48: error: cannot convert ‘SimpleNode’ to ‘SimpleNode*’ in initialization
+   60 |   SimpleNode* ptr = allnodes[index].getneighbor();
+      |                     ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+      |                                                |
+      |                                                SimpleNode
+make: *** [src/subdir.mk:26: src/SimpleGraph.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:12:38 **** Incremental Build of configuration Debug for project q1 ****
+make all 
+Building file: ../src/SimpleGraph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleGraph.d" -MT"src/SimpleGraph.o" -o "src/SimpleGraph.o" "../src/SimpleGraph.cpp"
+../src/SimpleGraph.cpp: In constructor ‘SimpleGraph::SimpleGraph(int)’:
+../src/SimpleGraph.cpp:14:13: error: ‘n’ was not declared in this scope
+   14 |  numNodes = n;
+      |             ^
+make: *** [src/subdir.mk:26: src/SimpleGraph.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:12:51 **** Incremental Build of configuration Debug for project q1 ****
+make all 
+Building file: ../src/SimpleGraph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleGraph.d" -MT"src/SimpleGraph.o" -o "src/SimpleGraph.o" "../src/SimpleGraph.cpp"
+Finished building: ../src/SimpleGraph.cpp
+ 
+Building file: ../src/SimpleNode.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleNode.d" -MT"src/SimpleNode.o" -o "src/SimpleNode.o" "../src/SimpleNode.cpp"
+Finished building: ../src/SimpleNode.cpp
+ 
+Building file: ../src/q1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/q1.d" -MT"src/q1.o" -o "src/q1.o" "../src/q1.cpp"
+Finished building: ../src/q1.cpp
+ 
+Building target: q1
+Invoking: GCC C++ Linker
+g++  -o "q1"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/q1.o   
+/usr/bin/ld: ./src/SimpleGraph.o: in function `SimpleGraph::SimpleGraph(int)':
+/home/danyal-faheem/Danyal/Work/FAST/Semester 2/Object Oriented Programming/19i-2014 F/q1/Debug/../src/SimpleGraph.cpp:13: undefined reference to `SimpleNode::~SimpleNode()'
+/usr/bin/ld: ./src/SimpleNode.o: in function `SimpleNode::SimpleNode(int)':
+/home/danyal-faheem/Danyal/Work/FAST/Semester 2/Object Oriented Programming/19i-2014 F/q1/Debug/../src/SimpleNode.cpp:21: undefined reference to `SimpleNode::~SimpleNode()'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:47: q1] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:14:21 **** Incremental Build of configuration Debug for project q1 ****
+make all 
+Building file: ../src/SimpleGraph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleGraph.d" -MT"src/SimpleGraph.o" -o "src/SimpleGraph.o" "../src/SimpleGraph.cpp"
+Finished building: ../src/SimpleGraph.cpp
+ 
+Building file: ../src/SimpleNode.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleNode.d" -MT"src/SimpleNode.o" -o "src/SimpleNode.o" "../src/SimpleNode.cpp"
+Finished building: ../src/SimpleNode.cpp
+ 
+Building target: q1
+Invoking: GCC C++ Linker
+g++  -o "q1"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/q1.o   
+Finished building target: q1
+ 
+16:15:06 **** Incremental Build of configuration Debug for project q1 ****
+make all 
+Building file: ../src/SimpleGraph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleGraph.d" -MT"src/SimpleGraph.o" -o "src/SimpleGraph.o" "../src/SimpleGraph.cpp"
+Finished building: ../src/SimpleGraph.cpp
+ 
+Building target: q1
+Invoking: GCC C++ Linker
+g++  -o "q1"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/q1.o   
+Finished building target: q1
+ 
+18:05:12 **** Incremental Build of configuration Debug for project q1 ****
+make all 
+Building file: ../src/SimpleGraph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleGraph.d" -MT"src/SimpleGraph.o" -o "src/SimpleGraph.o" "../src/SimpleGraph.cpp"
+Finished building: ../src/SimpleGraph.cpp
+ 
+Building file: ../src/q1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/q1.d" -MT"src/q1.o" -o "src/q1.o" "../src/q1.cpp"
+Finished building: ../src/q1.cpp
+ 
+Building target: q1
+Invoking: GCC C++ Linker
+g++  -o "q1"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/q1.o   
+Finished building target: q1
+ 
+18:07:43 **** Incremental Build of configuration Debug for project q1 ****
+make all 
+Building file: ../src/SimpleGraph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleGraph.d" -MT"src/SimpleGraph.o" -o "src/SimpleGraph.o" "../src/SimpleGraph.cpp"
+Finished building: ../src/SimpleGraph.cpp
+ 
+Building file: ../src/q1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/q1.d" -MT"src/q1.o" -o "src/q1.o" "../src/q1.cpp"
+Finished building: ../src/q1.cpp
+ 
+Building target: q1
+Invoking: GCC C++ Linker
+g++  -o "q1"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/q1.o   
+Finished building target: q1
+ 
+18:09:14 **** Incremental Build of configuration Debug for project q1 ****
+make all 
+Building file: ../src/SimpleNode.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleNode.d" -MT"src/SimpleNode.o" -o "src/SimpleNode.o" "../src/SimpleNode.cpp"
+Finished building: ../src/SimpleNode.cpp
+ 
+Building target: q1
+Invoking: GCC C++ Linker
+g++  -o "q1"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/q1.o   
+Finished building target: q1
+ 
+18:10:38 **** Incremental Build of configuration Debug for project q1 ****
+make all 
+Building file: ../src/SimpleGraph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleGraph.d" -MT"src/SimpleGraph.o" -o "src/SimpleGraph.o" "../src/SimpleGraph.cpp"
+Finished building: ../src/SimpleGraph.cpp
+ 
+Building target: q1
+Invoking: GCC C++ Linker
+g++  -o "q1"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/q1.o   
+Finished building target: q1
+ 
+18:11:17 **** Incremental Build of configuration Debug for project q1 ****
+make all 
+Building file: ../src/SimpleGraph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleGraph.d" -MT"src/SimpleGraph.o" -o "src/SimpleGraph.o" "../src/SimpleGraph.cpp"
+Finished building: ../src/SimpleGraph.cpp
+ 
+Building target: q1
+Invoking: GCC C++ Linker
+g++  -o "q1"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/q1.o   
+Finished building target: q1
+ 
+18:13:08 **** Incremental Build of configuration Debug for project q1 ****
+make all 
+Building file: ../src/SimpleGraph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleGraph.d" -MT"src/SimpleGraph.o" -o "src/SimpleGraph.o" "../src/SimpleGraph.cpp"
+Finished building: ../src/SimpleGraph.cpp
+ 
+Building target: q1
+Invoking: GCC C++ Linker
+g++  -o "q1"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/q1.o   
+Finished building target: q1
+ 
+18:15:02 **** Incremental Build of configuration Debug for project q1 ****
+make all 
+Building file: ../src/SimpleGraph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleGraph.d" -MT"src/SimpleGraph.o" -o "src/SimpleGraph.o" "../src/SimpleGraph.cpp"
+Finished building: ../src/SimpleGraph.cpp
+ 
+Building target: q1
+Invoking: GCC C++ Linker
+g++  -o "q1"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/q1.o   
+Finished building target: q1
+ 
+18:15:22 **** Incremental Build of configuration Debug for project q1 ****
+make all 
+Building file: ../src/q1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/q1.d" -MT"src/q1.o" -o "src/q1.o" "../src/q1.cpp"
+Finished building: ../src/q1.cpp
+ 
+Building target: q1
+Invoking: GCC C++ Linker
+g++  -o "q1"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/q1.o   
+Finished building target: q1
+ 
+18:16:57 **** Incremental Build of configuration Debug for project q1 ****
+make all 
+Building file: ../src/q1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/q1.d" -MT"src/q1.o" -o "src/q1.o" "../src/q1.cpp"
+Finished building: ../src/q1.cpp
+ 
+Building target: q1
+Invoking: GCC C++ Linker
+g++  -o "q1"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/q1.o   
+Finished building target: q1
+ 
+18:17:43 **** Incremental Build of configuration Debug for project q1 ****
+make all 
+Building file: ../src/q1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/q1.d" -MT"src/q1.o" -o "src/q1.o" "../src/q1.cpp"
+Finished building: ../src/q1.cpp
+ 
+Building target: q1
+Invoking: GCC C++ Linker
+g++  -o "q1"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/q1.o   
+Finished building target: q1
+ 
+18:18:24 **** Incremental Build of configuration Debug for project q1 ****
+make all 
+Building file: ../src/q1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/q1.d" -MT"src/q1.o" -o "src/q1.o" "../src/q1.cpp"
+Finished building: ../src/q1.cpp
+ 
+Building target: q1
+Invoking: GCC C++ Linker
+g++  -o "q1"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/q1.o   
+Finished building target: q1
+ 
+18:25:37 **** Incremental Build of configuration Debug for project q1 ****
+make all 
+make: Nothing to be done for 'all'.
+18:25:40 **** Incremental Build of configuration Debug for project q1 ****
+make all 
+make: Nothing to be done for 'all'.
+18:32:01 **** Incremental Build of configuration Debug for project q1 ****
+make all 
+Building file: ../src/SimpleGraph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleGraph.d" -MT"src/SimpleGraph.o" -o "src/SimpleGraph.o" "../src/SimpleGraph.cpp"
+Finished building: ../src/SimpleGraph.cpp
+ 
+Building target: q1
+Invoking: GCC C++ Linker
+g++  -o "q1"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/q1.o   
+Finished building target: q1
+ 
+18:32:29 **** Incremental Build of configuration Debug for project q1 ****
+make all 
+make: Nothing to be done for 'all'.
+18:34:23 **** Incremental Build of configuration Debug for project q1 ****
+make all 
+make: Nothing to be done for 'all'.
+18:39:07 **** Incremental Build of configuration Debug for project q1 ****
+make all 
+Building file: ../src/SimpleGraph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleGraph.d" -MT"src/SimpleGraph.o" -o "src/SimpleGraph.o" "../src/SimpleGraph.cpp"
+Finished building: ../src/SimpleGraph.cpp
+ 
+Building target: q1
+Invoking: GCC C++ Linker
+g++  -o "q1"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/q1.o   
+Finished building target: q1
+ 
+18:39:20 **** Incremental Build of configuration Debug for project q1 ****
+make all 
+Building file: ../src/SimpleGraph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleGraph.d" -MT"src/SimpleGraph.o" -o "src/SimpleGraph.o" "../src/SimpleGraph.cpp"
+Finished building: ../src/SimpleGraph.cpp
+ 
+Building target: q1
+Invoking: GCC C++ Linker
+g++  -o "q1"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/q1.o   
+Finished building target: q1
+ 
+17:52:07 **** Build of configuration Debug for project q2 ****
+make all 
+Building file: ../src/SimpleGraph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleGraph.d" -MT"src/SimpleGraph.o" -o "src/SimpleGraph.o" "../src/SimpleGraph.cpp"
+Finished building: ../src/SimpleGraph.cpp
+ 
+Building file: ../src/SimpleNode.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleNode.d" -MT"src/SimpleNode.o" -o "src/SimpleNode.o" "../src/SimpleNode.cpp"
+Finished building: ../src/SimpleNode.cpp
+ 
+Building file: ../src/attributeGraph1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/attributeGraph1.d" -MT"src/attributeGraph1.o" -o "src/attributeGraph1.o" "../src/attributeGraph1.cpp"
+Finished building: ../src/attributeGraph1.cpp
+ 
+Building file: ../src/attributedNode1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/attributedNode1.d" -MT"src/attributedNode1.o" -o "src/attributedNode1.o" "../src/attributedNode1.cpp"
+../src/attributedNode1.cpp:13:11: error: empty character constant
+   13 |  gender = '';
+      |           ^~
+make: *** [src/subdir.mk:32: src/attributedNode1.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+17:53:01 **** Incremental Build of configuration Debug for project q2 ****
+make all 
+Building file: ../src/attributedNode1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/attributedNode1.d" -MT"src/attributedNode1.o" -o "src/attributedNode1.o" "../src/attributedNode1.cpp"
+Finished building: ../src/attributedNode1.cpp
+ 
+Building file: ../src/q2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/q2.d" -MT"src/q2.o" -o "src/q2.o" "../src/q2.cpp"
+Finished building: ../src/q2.cpp
+ 
+Building target: q2
+Invoking: GCC C++ Linker
+g++  -o "q2"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/attributeGraph1.o ./src/attributedNode1.o ./src/q2.o   
+Finished building target: q2
+ 
+18:04:35 **** Incremental Build of configuration Debug for project q2 ****
+make all 
+Building file: ../src/q2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/q2.d" -MT"src/q2.o" -o "src/q2.o" "../src/q2.cpp"
+Finished building: ../src/q2.cpp
+ 
+Building target: q2
+Invoking: GCC C++ Linker
+g++  -o "q2"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/attributeGraph1.o ./src/attributedNode1.o ./src/q2.o   
+/usr/bin/ld: ./src/q2.o: in function `main':
+/home/danyal-faheem/Danyal/Work/FAST/Semester 2/Object Oriented Programming/19i-2014 F/q2/Debug/../src/q2.cpp:13: undefined reference to `attributeGraph1::~attributeGraph1()'
+/usr/bin/ld: /home/danyal-faheem/Danyal/Work/FAST/Semester 2/Object Oriented Programming/19i-2014 F/q2/Debug/../src/q2.cpp:13: undefined reference to `attributeGraph1::~attributeGraph1()'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:47: q2] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:06:40 **** Incremental Build of configuration Debug for project q2 ****
+make all 
+Building file: ../src/SimpleGraph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleGraph.d" -MT"src/SimpleGraph.o" -o "src/SimpleGraph.o" "../src/SimpleGraph.cpp"
+Finished building: ../src/SimpleGraph.cpp
+ 
+Building file: ../src/attributeGraph1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/attributeGraph1.d" -MT"src/attributeGraph1.o" -o "src/attributeGraph1.o" "../src/attributeGraph1.cpp"
+Finished building: ../src/attributeGraph1.cpp
+ 
+Building file: ../src/q2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/q2.d" -MT"src/q2.o" -o "src/q2.o" "../src/q2.cpp"
+Finished building: ../src/q2.cpp
+ 
+Building target: q2
+Invoking: GCC C++ Linker
+g++  -o "q2"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/attributeGraph1.o ./src/attributedNode1.o ./src/q2.o   
+Finished building target: q2
+ 
+18:10:34 **** Incremental Build of configuration Debug for project q2 ****
+make all 
+Building file: ../src/SimpleGraph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleGraph.d" -MT"src/SimpleGraph.o" -o "src/SimpleGraph.o" "../src/SimpleGraph.cpp"
+Finished building: ../src/SimpleGraph.cpp
+ 
+Building file: ../src/attributeGraph1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/attributeGraph1.d" -MT"src/attributeGraph1.o" -o "src/attributeGraph1.o" "../src/attributeGraph1.cpp"
+Finished building: ../src/attributeGraph1.cpp
+ 
+Building target: q2
+Invoking: GCC C++ Linker
+g++  -o "q2"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/attributeGraph1.o ./src/attributedNode1.o ./src/q2.o   
+Finished building target: q2
+ 
+18:15:19 **** Incremental Build of configuration Debug for project q2 ****
+make all 
+Building file: ../src/SimpleGraph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleGraph.d" -MT"src/SimpleGraph.o" -o "src/SimpleGraph.o" "../src/SimpleGraph.cpp"
+Finished building: ../src/SimpleGraph.cpp
+ 
+Building file: ../src/attributeGraph1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/attributeGraph1.d" -MT"src/attributeGraph1.o" -o "src/attributeGraph1.o" "../src/attributeGraph1.cpp"
+Finished building: ../src/attributeGraph1.cpp
+ 
+Building file: ../src/attributedNode1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/attributedNode1.d" -MT"src/attributedNode1.o" -o "src/attributedNode1.o" "../src/attributedNode1.cpp"
+Finished building: ../src/attributedNode1.cpp
+ 
+Building file: ../src/q2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/q2.d" -MT"src/q2.o" -o "src/q2.o" "../src/q2.cpp"
+Finished building: ../src/q2.cpp
+ 
+Building target: q2
+Invoking: GCC C++ Linker
+g++  -o "q2"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/attributeGraph1.o ./src/attributedNode1.o ./src/q2.o   
+Finished building target: q2
+ 
+18:18:53 **** Incremental Build of configuration Debug for project q2 ****
+make all 
+Building file: ../src/attributeGraph1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/attributeGraph1.d" -MT"src/attributeGraph1.o" -o "src/attributeGraph1.o" "../src/attributeGraph1.cpp"
+../src/attributeGraph1.cpp: In member function ‘void attributeGraph1::appendAttribute()’:
+../src/attributeGraph1.cpp:31:22: error: expected ‘;’ before ‘)’ token
+   31 |    for(;check != true){
+      |                      ^
+      |                      ;
+make: *** [src/subdir.mk:32: src/attributeGraph1.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:19:08 **** Incremental Build of configuration Debug for project q2 ****
+make all 
+Building file: ../src/attributeGraph1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/attributeGraph1.d" -MT"src/attributeGraph1.o" -o "src/attributeGraph1.o" "../src/attributeGraph1.cpp"
+Finished building: ../src/attributeGraph1.cpp
+ 
+Building file: ../src/q2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/q2.d" -MT"src/q2.o" -o "src/q2.o" "../src/q2.cpp"
+Finished building: ../src/q2.cpp
+ 
+Building target: q2
+Invoking: GCC C++ Linker
+g++  -o "q2"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/attributeGraph1.o ./src/attributedNode1.o ./src/q2.o   
+Finished building target: q2
+ 
+18:19:13 **** Incremental Build of configuration Debug for project q2 ****
+make all 
+make: Nothing to be done for 'all'.
+18:19:32 **** Incremental Build of configuration Debug for project q2 ****
+make all 
+make: Nothing to be done for 'all'.
+18:22:28 **** Incremental Build of configuration Debug for project q1 ****
+make all 
+Building file: ../src/SimpleGraph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleGraph.d" -MT"src/SimpleGraph.o" -o "src/SimpleGraph.o" "../src/SimpleGraph.cpp"
+Finished building: ../src/SimpleGraph.cpp
+ 
+Building file: ../src/q1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/q1.d" -MT"src/q1.o" -o "src/q1.o" "../src/q1.cpp"
+Finished building: ../src/q1.cpp
+ 
+Building target: q1
+Invoking: GCC C++ Linker
+g++  -o "q1"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/q1.o   
+Finished building target: q1
+ 
+22:23:38 **** Incremental Build of configuration Debug for project q1 ****
+make all 
+Building file: ../src/SimpleGraph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleGraph.d" -MT"src/SimpleGraph.o" -o "src/SimpleGraph.o" "../src/SimpleGraph.cpp"
+Finished building: ../src/SimpleGraph.cpp
+ 
+Building file: ../src/q1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/q1.d" -MT"src/q1.o" -o "src/q1.o" "../src/q1.cpp"
+Finished building: ../src/q1.cpp
+ 
+Building target: q1
+Invoking: GCC C++ Linker
+g++  -o "q1"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/q1.o   
+Finished building target: q1
+ 
+23:17:50 **** Incremental Build of configuration Debug for project q1 ****
+make all 
+Building file: ../src/SimpleGraph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleGraph.d" -MT"src/SimpleGraph.o" -o "src/SimpleGraph.o" "../src/SimpleGraph.cpp"
+Finished building: ../src/SimpleGraph.cpp
+ 
+Building file: ../src/SimpleNode.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleNode.d" -MT"src/SimpleNode.o" -o "src/SimpleNode.o" "../src/SimpleNode.cpp"
+Finished building: ../src/SimpleNode.cpp
+ 
+Building target: q1
+Invoking: GCC C++ Linker
+g++  -o "q1"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/q1.o   
+Finished building target: q1
+ 
+23:20:13 **** Incremental Build of configuration Debug for project q1 ****
+make all 
+Building file: ../src/SimpleNode.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleNode.d" -MT"src/SimpleNode.o" -o "src/SimpleNode.o" "../src/SimpleNode.cpp"
+Finished building: ../src/SimpleNode.cpp
+ 
+Building target: q1
+Invoking: GCC C++ Linker
+g++  -o "q1"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/q1.o   
+Finished building target: q1
+ 
+13:37:00 **** Build of configuration Debug for project q3 ****
+make all 
+Building file: ../src/SimpleGraph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleGraph.d" -MT"src/SimpleGraph.o" -o "src/SimpleGraph.o" "../src/SimpleGraph.cpp"
+Finished building: ../src/SimpleGraph.cpp
+ 
+Building file: ../src/SimpleNode.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleNode.d" -MT"src/SimpleNode.o" -o "src/SimpleNode.o" "../src/SimpleNode.cpp"
+Finished building: ../src/SimpleNode.cpp
+ 
+Building file: ../src/attributeGraph2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/attributeGraph2.d" -MT"src/attributeGraph2.o" -o "src/attributeGraph2.o" "../src/attributeGraph2.cpp"
+../src/attributeGraph2.cpp: In member function ‘void attributeGraph2::appendAttribute()’:
+../src/attributeGraph2.cpp:21:8: warning: unused variable ‘check’ [-Wunused-variable]
+   21 |   bool check = false;
+      |        ^~~~~
+Finished building: ../src/attributeGraph2.cpp
+ 
+Building file: ../src/attributedNode2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/attributedNode2.d" -MT"src/attributedNode2.o" -o "src/attributedNode2.o" "../src/attributedNode2.cpp"
+Finished building: ../src/attributedNode2.cpp
+ 
+Building file: ../src/q3.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/q3.d" -MT"src/q3.o" -o "src/q3.o" "../src/q3.cpp"
+Finished building: ../src/q3.cpp
+ 
+Building target: q3
+Invoking: GCC C++ Linker
+g++  -o "q3"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/attributeGraph2.o ./src/attributedNode2.o ./src/q3.o   
+Finished building target: q3
+ 
+13:37:34 **** Incremental Build of configuration Debug for project q3 ****
+make all 
+Building file: ../src/attributeGraph2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/attributeGraph2.d" -MT"src/attributeGraph2.o" -o "src/attributeGraph2.o" "../src/attributeGraph2.cpp"
+Finished building: ../src/attributeGraph2.cpp
+ 
+Building target: q3
+Invoking: GCC C++ Linker
+g++  -o "q3"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/attributeGraph2.o ./src/attributedNode2.o ./src/q3.o   
+Finished building target: q3
+ 
+13:38:32 **** Incremental Build of configuration Debug for project q3 ****
+make all 
+Building file: ../src/attributeGraph2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/attributeGraph2.d" -MT"src/attributeGraph2.o" -o "src/attributeGraph2.o" "../src/attributeGraph2.cpp"
+Finished building: ../src/attributeGraph2.cpp
+ 
+Building target: q3
+Invoking: GCC C++ Linker
+g++  -o "q3"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/attributeGraph2.o ./src/attributedNode2.o ./src/q3.o   
+Finished building target: q3
+ 
+14:03:58 **** Incremental Build of configuration Debug for project q3 ****
+make all 
+Building file: ../src/attributeGraph2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/attributeGraph2.d" -MT"src/attributeGraph2.o" -o "src/attributeGraph2.o" "../src/attributeGraph2.cpp"
+../src/attributeGraph2.cpp: In member function ‘void attributeGraph2::appendAttribute()’:
+../src/attributeGraph2.cpp:22:18: error: ‘k’ was not declared in this scope
+   22 |  string temp,mid;k
+      |                  ^
+../src/attributeGraph2.cpp:23:23: error: ‘counter’ was not declared in this scope
+   23 |  for(int counter = 0; counter < numNodes; counter++){
+      |                       ^~~~~~~
+make: *** [src/subdir.mk:32: src/attributeGraph2.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+14:04:31 **** Incremental Build of configuration Debug for project q3 ****
+make all 
+Building file: ../src/attributeGraph2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/attributeGraph2.d" -MT"src/attributeGraph2.o" -o "src/attributeGraph2.o" "../src/attributeGraph2.cpp"
+Finished building: ../src/attributeGraph2.cpp
+ 
+Building target: q3
+Invoking: GCC C++ Linker
+g++  -o "q3"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/attributeGraph2.o ./src/attributedNode2.o ./src/q3.o   
+Finished building target: q3
+ 
+15:29:08 **** Incremental Build of configuration Debug for project q3 ****
+make all 
+Building file: ../src/attributeGraph2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/attributeGraph2.d" -MT"src/attributeGraph2.o" -o "src/attributeGraph2.o" "../src/attributeGraph2.cpp"
+Finished building: ../src/attributeGraph2.cpp
+ 
+Building target: q3
+Invoking: GCC C++ Linker
+g++  -o "q3"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/attributeGraph2.o ./src/attributedNode2.o ./src/q3.o   
+Finished building target: q3
+ 
+15:31:36 **** Incremental Build of configuration Debug for project q2 ****
+make all 
+Building file: ../src/SimpleGraph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleGraph.d" -MT"src/SimpleGraph.o" -o "src/SimpleGraph.o" "../src/SimpleGraph.cpp"
+Finished building: ../src/SimpleGraph.cpp
+ 
+Building file: ../src/attributeGraph1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/attributeGraph1.d" -MT"src/attributeGraph1.o" -o "src/attributeGraph1.o" "../src/attributeGraph1.cpp"
+Finished building: ../src/attributeGraph1.cpp
+ 
+Building target: q2
+Invoking: GCC C++ Linker
+g++  -o "q2"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/attributeGraph1.o ./src/attributedNode1.o ./src/q2.o   
+Finished building target: q2
+ 
+15:32:05 **** Incremental Build of configuration Debug for project q2 ****
+make all 
+make: Nothing to be done for 'all'.
+15:34:16 **** Incremental Build of configuration Debug for project q2 ****
+make all 
+Building file: ../src/attributeGraph1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/attributeGraph1.d" -MT"src/attributeGraph1.o" -o "src/attributeGraph1.o" "../src/attributeGraph1.cpp"
+Finished building: ../src/attributeGraph1.cpp
+ 
+Building target: q2
+Invoking: GCC C++ Linker
+g++  -o "q2"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/attributeGraph1.o ./src/attributedNode1.o ./src/q2.o   
+Finished building target: q2
+ 
+15:37:42 **** Incremental Build of configuration Debug for project q2 ****
+make all 
+Building file: ../src/attributeGraph1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/attributeGraph1.d" -MT"src/attributeGraph1.o" -o "src/attributeGraph1.o" "../src/attributeGraph1.cpp"
+Finished building: ../src/attributeGraph1.cpp
+ 
+Building target: q2
+Invoking: GCC C++ Linker
+g++  -o "q2"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/attributeGraph1.o ./src/attributedNode1.o ./src/q2.o   
+Finished building target: q2
+ 
+15:38:26 **** Incremental Build of configuration Debug for project q2 ****
+make all 
+make: Nothing to be done for 'all'.
+15:39:47 **** Incremental Build of configuration Debug for project q2 ****
+make all 
+Building file: ../src/SimpleGraph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleGraph.d" -MT"src/SimpleGraph.o" -o "src/SimpleGraph.o" "../src/SimpleGraph.cpp"
+Finished building: ../src/SimpleGraph.cpp
+ 
+Building file: ../src/SimpleNode.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleNode.d" -MT"src/SimpleNode.o" -o "src/SimpleNode.o" "../src/SimpleNode.cpp"
+Finished building: ../src/SimpleNode.cpp
+ 
+Building file: ../src/attributedNode1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/attributedNode1.d" -MT"src/attributedNode1.o" -o "src/attributedNode1.o" "../src/attributedNode1.cpp"
+Finished building: ../src/attributedNode1.cpp
+ 
+Building target: q2
+Invoking: GCC C++ Linker
+g++  -o "q2"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/attributeGraph1.o ./src/attributedNode1.o ./src/q2.o   
+Finished building target: q2
+ 
+15:40:06 **** Incremental Build of configuration Debug for project q2 ****
+make all 
+make: Nothing to be done for 'all'.
+15:43:39 **** Incremental Build of configuration Debug for project q2 ****
+make all 
+Building file: ../src/attributeGraph1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/attributeGraph1.d" -MT"src/attributeGraph1.o" -o "src/attributeGraph1.o" "../src/attributeGraph1.cpp"
+Finished building: ../src/attributeGraph1.cpp
+ 
+Building target: q2
+Invoking: GCC C++ Linker
+g++  -o "q2"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/attributeGraph1.o ./src/attributedNode1.o ./src/q2.o   
+Finished building target: q2
+ 
+15:44:31 **** Incremental Build of configuration Debug for project q2 ****
+make all 
+Building file: ../src/attributeGraph1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/attributeGraph1.d" -MT"src/attributeGraph1.o" -o "src/attributeGraph1.o" "../src/attributeGraph1.cpp"
+Finished building: ../src/attributeGraph1.cpp
+ 
+Building target: q2
+Invoking: GCC C++ Linker
+g++  -o "q2"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/attributeGraph1.o ./src/attributedNode1.o ./src/q2.o   
+Finished building target: q2
+ 
+15:51:14 **** Incremental Build of configuration Debug for project q3 ****
+make all 
+Building file: ../src/attributeGraph2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/attributeGraph2.d" -MT"src/attributeGraph2.o" -o "src/attributeGraph2.o" "../src/attributeGraph2.cpp"
+Finished building: ../src/attributeGraph2.cpp
+ 
+Building file: ../src/q3.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/q3.d" -MT"src/q3.o" -o "src/q3.o" "../src/q3.cpp"
+Finished building: ../src/q3.cpp
+ 
+Building target: q3
+Invoking: GCC C++ Linker
+g++  -o "q3"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/attributeGraph2.o ./src/attributedNode2.o ./src/q3.o   
+Finished building target: q3
+ 
+15:51:30 **** Incremental Build of configuration Debug for project q3 ****
+make all 
+make: Nothing to be done for 'all'.
+15:52:47 **** Incremental Build of configuration Debug for project q3 ****
+make all 
+Building file: ../src/SimpleGraph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleGraph.d" -MT"src/SimpleGraph.o" -o "src/SimpleGraph.o" "../src/SimpleGraph.cpp"
+Finished building: ../src/SimpleGraph.cpp
+ 
+Building file: ../src/attributeGraph2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/attributeGraph2.d" -MT"src/attributeGraph2.o" -o "src/attributeGraph2.o" "../src/attributeGraph2.cpp"
+Finished building: ../src/attributeGraph2.cpp
+ 
+Building file: ../src/q3.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/q3.d" -MT"src/q3.o" -o "src/q3.o" "../src/q3.cpp"
+Finished building: ../src/q3.cpp
+ 
+Building target: q3
+Invoking: GCC C++ Linker
+g++  -o "q3"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/attributeGraph2.o ./src/attributedNode2.o ./src/q3.o   
+Finished building target: q3
+ 
+15:57:57 **** Incremental Build of configuration Debug for project q2 ****
+make all 
+Building file: ../src/SimpleGraph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleGraph.d" -MT"src/SimpleGraph.o" -o "src/SimpleGraph.o" "../src/SimpleGraph.cpp"
+Finished building: ../src/SimpleGraph.cpp
+ 
+Building file: ../src/attributeGraph1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/attributeGraph1.d" -MT"src/attributeGraph1.o" -o "src/attributeGraph1.o" "../src/attributeGraph1.cpp"
+Finished building: ../src/attributeGraph1.cpp
+ 
+Building file: ../src/q2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/q2.d" -MT"src/q2.o" -o "src/q2.o" "../src/q2.cpp"
+../src/q2.cpp: In function ‘int main()’:
+../src/q2.cpp:23:7: error: ‘class attributeGraph1’ has no member named ‘printGraphData’
+   23 |   obj.printGraphData();
+      |       ^~~~~~~~~~~~~~
+make: *** [src/subdir.mk:32: src/q2.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:58:25 **** Incremental Build of configuration Debug for project q2 ****
+make all 
+Building file: ../src/q2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/q2.d" -MT"src/q2.o" -o "src/q2.o" "../src/q2.cpp"
+../src/q2.cpp: In function ‘int main()’:
+../src/q2.cpp:24:18: warning: ‘ptr’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+   24 |   ptr->printdata();
+      |                  ^
+Finished building: ../src/q2.cpp
+ 
+Building target: q2
+Invoking: GCC C++ Linker
+g++  -o "q2"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/attributeGraph1.o ./src/attributedNode1.o ./src/q2.o   
+Finished building target: q2
+ 
+15:58:41 **** Incremental Build of configuration Debug for project q2 ****
+make all 
+make: Nothing to be done for 'all'.
+15:59:17 **** Incremental Build of configuration Debug for project q2 ****
+make all 
+make: Nothing to be done for 'all'.
+16:00:18 **** Incremental Build of configuration Debug for project q2 ****
+make all 
+Building file: ../src/attributeGraph1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/attributeGraph1.d" -MT"src/attributeGraph1.o" -o "src/attributeGraph1.o" "../src/attributeGraph1.cpp"
+Finished building: ../src/attributeGraph1.cpp
+ 
+Building file: ../src/q2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/q2.d" -MT"src/q2.o" -o "src/q2.o" "../src/q2.cpp"
+../src/q2.cpp: In function ‘int main()’:
+../src/q2.cpp:24:18: warning: ‘ptr’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+   24 |   ptr->printdata();
+      |                  ^
+Finished building: ../src/q2.cpp
+ 
+Building target: q2
+Invoking: GCC C++ Linker
+g++  -o "q2"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/attributeGraph1.o ./src/attributedNode1.o ./src/q2.o   
+Finished building target: q2
+ 
+16:01:25 **** Incremental Build of configuration Debug for project q2 ****
+make all 
+Building file: ../src/q2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/q2.d" -MT"src/q2.o" -o "src/q2.o" "../src/q2.cpp"
+Finished building: ../src/q2.cpp
+ 
+Building target: q2
+Invoking: GCC C++ Linker
+g++  -o "q2"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/attributeGraph1.o ./src/attributedNode1.o ./src/q2.o   
+Finished building target: q2
+ 
+16:02:13 **** Incremental Build of configuration Debug for project q1 ****
+make all 
+Building file: ../src/SimpleGraph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleGraph.d" -MT"src/SimpleGraph.o" -o "src/SimpleGraph.o" "../src/SimpleGraph.cpp"
+Finished building: ../src/SimpleGraph.cpp
+ 
+Building file: ../src/q1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/q1.d" -MT"src/q1.o" -o "src/q1.o" "../src/q1.cpp"
+Finished building: ../src/q1.cpp
+ 
+Building target: q1
+Invoking: GCC C++ Linker
+g++  -o "q1"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/q1.o   
+Finished building target: q1
+ 
+16:02:43 **** Incremental Build of configuration Debug for project q2 ****
+make all 
+Building file: ../src/attributeGraph1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/attributeGraph1.d" -MT"src/attributeGraph1.o" -o "src/attributeGraph1.o" "../src/attributeGraph1.cpp"
+Finished building: ../src/attributeGraph1.cpp
+ 
+Building target: q2
+Invoking: GCC C++ Linker
+g++  -o "q2"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/attributeGraph1.o ./src/attributedNode1.o ./src/q2.o   
+Finished building target: q2
+ 
+16:03:03 **** Incremental Build of configuration Debug for project q3 ****
+make all 
+Building file: ../src/attributeGraph2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/attributeGraph2.d" -MT"src/attributeGraph2.o" -o "src/attributeGraph2.o" "../src/attributeGraph2.cpp"
+Finished building: ../src/attributeGraph2.cpp
+ 
+Building target: q3
+Invoking: GCC C++ Linker
+g++  -o "q3"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/attributeGraph2.o ./src/attributedNode2.o ./src/q3.o   
+Finished building target: q3
+ 
+17:01:44 **** Build of configuration Debug for project q4 ****
+make all 
+Building file: ../src/SimpleGraph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleGraph.d" -MT"src/SimpleGraph.o" -o "src/SimpleGraph.o" "../src/SimpleGraph.cpp"
+Finished building: ../src/SimpleGraph.cpp
+ 
+Building file: ../src/SimpleNode.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleNode.d" -MT"src/SimpleNode.o" -o "src/SimpleNode.o" "../src/SimpleNode.cpp"
+Finished building: ../src/SimpleNode.cpp
+ 
+Building file: ../src/attributeGraph1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/attributeGraph1.d" -MT"src/attributeGraph1.o" -o "src/attributeGraph1.o" "../src/attributeGraph1.cpp"
+Finished building: ../src/attributeGraph1.cpp
+ 
+Building file: ../src/attributeGraph2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/attributeGraph2.d" -MT"src/attributeGraph2.o" -o "src/attributeGraph2.o" "../src/attributeGraph2.cpp"
+Finished building: ../src/attributeGraph2.cpp
+ 
+Building file: ../src/attributeWeightedGraph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/attributeWeightedGraph.d" -MT"src/attributeWeightedGraph.o" -o "src/attributeWeightedGraph.o" "../src/attributeWeightedGraph.cpp"
+../src/attributeWeightedGraph.cpp: In member function ‘void attributeWeightedGraph::appendWeight(int, int, int)’:
+../src/attributeWeightedGraph.cpp:24:34: error: reference to ‘numNodes’ is ambiguous
+   24 |   for(int counter = 0; counter < numNodes; counter++){
+      |                                  ^~~~~~~~
+In file included from ../src/attributeWeightedGraph.h:10,
+                 from ../src/attributeWeightedGraph.cpp:8:
+../src/SimpleGraph.h:16:6: note: candidates are: ‘int SimpleGraph::numNodes’
+   16 |  int numNodes,numEdges;
+      |      ^~~~~~~~
+../src/SimpleGraph.h:16:6: note:                 ‘int SimpleGraph::numNodes’
+../src/attributeWeightedGraph.cpp:25:7: error: reference to ‘allnodes’ is ambiguous
+   25 |    if(allnodes[counter].getid() == n1){
+      |       ^~~~~~~~
+In file included from ../src/attributeWeightedGraph.h:10,
+                 from ../src/attributeWeightedGraph.cpp:8:
+../src/SimpleGraph.h:17:17: note: candidates are: ‘SimpleNode* SimpleGraph::allnodes’
+   17 |     SimpleNode *allnodes;
+      |                 ^~~~~~~~
+../src/SimpleGraph.h:17:17: note:                 ‘SimpleNode* SimpleGraph::allnodes’
+../src/attributeWeightedGraph.cpp:29:7: error: reference to ‘allnodes’ is ambiguous
+   29 |    if(allnodes[counter].getid() == n2){
+      |       ^~~~~~~~
+In file included from ../src/attributeWeightedGraph.h:10,
+                 from ../src/attributeWeightedGraph.cpp:8:
+../src/SimpleGraph.h:17:17: note: candidates are: ‘SimpleNode* SimpleGraph::allnodes’
+   17 |     SimpleNode *allnodes;
+      |                 ^~~~~~~~
+../src/SimpleGraph.h:17:17: note:                 ‘SimpleNode* SimpleGraph::allnodes’
+make: *** [src/subdir.mk:41: src/attributeWeightedGraph.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+17:02:44 **** Incremental Build of configuration Debug for project q4 ****
+make all 
+Building file: ../src/attributeWeightedGraph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/attributeWeightedGraph.d" -MT"src/attributeWeightedGraph.o" -o "src/attributeWeightedGraph.o" "../src/attributeWeightedGraph.cpp"
+../src/attributeWeightedGraph.cpp: In member function ‘void attributeWeightedGraph::appendWeight(int, int, int)’:
+../src/attributeWeightedGraph.cpp:24:47: error: ‘SimpleGraph’ is an ambiguous base of ‘attributeWeightedGraph’
+   24 |   for(int counter = 0; counter < SimpleGraph::numNodes; counter++){
+      |                                               ^~~~~~~~
+../src/attributeWeightedGraph.cpp:25:20: error: ‘SimpleGraph’ is an ambiguous base of ‘attributeWeightedGraph’
+   25 |    if(SimpleGraph::allnodes[counter].getid() == n1){
+      |                    ^~~~~~~~
+../src/attributeWeightedGraph.cpp:29:20: error: ‘SimpleGraph’ is an ambiguous base of ‘attributeWeightedGraph’
+   29 |    if(SimpleGraph::allnodes[counter].getid() == n2){
+      |                    ^~~~~~~~
+make: *** [src/subdir.mk:41: src/attributeWeightedGraph.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+17:04:07 **** Incremental Build of configuration Debug for project q4 ****
+make all 
+Building file: ../src/attributeWeightedGraph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/attributeWeightedGraph.d" -MT"src/attributeWeightedGraph.o" -o "src/attributeWeightedGraph.o" "../src/attributeWeightedGraph.cpp"
+Finished building: ../src/attributeWeightedGraph.cpp
+ 
+Building file: ../src/attributedNode1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/attributedNode1.d" -MT"src/attributedNode1.o" -o "src/attributedNode1.o" "../src/attributedNode1.cpp"
+Finished building: ../src/attributedNode1.cpp
+ 
+Building file: ../src/attributedNode2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/attributedNode2.d" -MT"src/attributedNode2.o" -o "src/attributedNode2.o" "../src/attributedNode2.cpp"
+Finished building: ../src/attributedNode2.cpp
+ 
+Building file: ../src/q4.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/q4.d" -MT"src/q4.o" -o "src/q4.o" "../src/q4.cpp"
+Finished building: ../src/q4.cpp
+ 
+Building target: q4
+Invoking: GCC C++ Linker
+g++  -o "q4"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/attributeGraph1.o ./src/attributeGraph2.o ./src/attributeWeightedGraph.o ./src/attributedNode1.o ./src/attributedNode2.o ./src/q4.o   
+/usr/bin/ld: ./src/attributeWeightedGraph.o: in function `attributeWeightedGraph::attributeWeightedGraph()':
+/home/danyal-faheem/Danyal/Work/FAST/Semester 2/Object Oriented Programming/19i-2014 F/q4/Debug/../src/attributeWeightedGraph.cpp:13: undefined reference to `vtable for attributeWeightedGraph'
+/usr/bin/ld: /home/danyal-faheem/Danyal/Work/FAST/Semester 2/Object Oriented Programming/19i-2014 F/q4/Debug/../src/attributeWeightedGraph.cpp:13: undefined reference to `vtable for attributeWeightedGraph'
+collect2: error: ld returned 1 exit status
+make: *** [makefile:47: q4] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+17:41:38 **** Incremental Build of configuration Debug for project q4 ****
+make all 
+Building file: ../src/attributeWeightedGraph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/attributeWeightedGraph.d" -MT"src/attributeWeightedGraph.o" -o "src/attributeWeightedGraph.o" "../src/attributeWeightedGraph.cpp"
+../src/attributeWeightedGraph.cpp: In member function ‘void attributeWeightedGraph::appendWeight(int, int, int)’:
+../src/attributeWeightedGraph.cpp:53:24: error: invalid conversion from ‘int’ to ‘int*’ [-fpermissive]
+   53 |     weights[counter] = weight;
+      |                        ^~~~~~
+      |                        |
+      |                        int
+make: *** [src/subdir.mk:41: src/attributeWeightedGraph.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+17:44:43 **** Incremental Build of configuration Debug for project q4 ****
+make all 
+Building file: ../src/attributeWeightedGraph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/attributeWeightedGraph.d" -MT"src/attributeWeightedGraph.o" -o "src/attributeWeightedGraph.o" "../src/attributeWeightedGraph.cpp"
+Finished building: ../src/attributeWeightedGraph.cpp
+ 
+Building target: q4
+Invoking: GCC C++ Linker
+g++  -o "q4"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/attributeGraph1.o ./src/attributeGraph2.o ./src/attributeWeightedGraph.o ./src/attributedNode1.o ./src/attributedNode2.o ./src/q4.o   
+Finished building target: q4
+ 
+17:55:45 **** Incremental Build of configuration Debug for project q4 ****
+make all 
+Building file: ../src/attributeWeightedGraph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/attributeWeightedGraph.d" -MT"src/attributeWeightedGraph.o" -o "src/attributeWeightedGraph.o" "../src/attributeWeightedGraph.cpp"
+Finished building: ../src/attributeWeightedGraph.cpp
+ 
+Building file: ../src/q4.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/q4.d" -MT"src/q4.o" -o "src/q4.o" "../src/q4.cpp"
+Finished building: ../src/q4.cpp
+ 
+Building target: q4
+Invoking: GCC C++ Linker
+g++  -o "q4"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/attributeGraph1.o ./src/attributeGraph2.o ./src/attributeWeightedGraph.o ./src/attributedNode1.o ./src/attributedNode2.o ./src/q4.o   
+Finished building target: q4
+ 
+18:00:50 **** Incremental Build of configuration Debug for project q4 ****
+make all 
+Building file: ../src/attributeWeightedGraph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/attributeWeightedGraph.d" -MT"src/attributeWeightedGraph.o" -o "src/attributeWeightedGraph.o" "../src/attributeWeightedGraph.cpp"
+Finished building: ../src/attributeWeightedGraph.cpp
+ 
+Building file: ../src/q4.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/q4.d" -MT"src/q4.o" -o "src/q4.o" "../src/q4.cpp"
+Finished building: ../src/q4.cpp
+ 
+Building target: q4
+Invoking: GCC C++ Linker
+g++  -o "q4"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/attributeGraph1.o ./src/attributeGraph2.o ./src/attributeWeightedGraph.o ./src/attributedNode1.o ./src/attributedNode2.o ./src/q4.o   
+Finished building target: q4
+ 
+18:06:29 **** Incremental Build of configuration Debug for project q4 ****
+make all 
+Building file: ../src/attributeWeightedGraph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/attributeWeightedGraph.d" -MT"src/attributeWeightedGraph.o" -o "src/attributeWeightedGraph.o" "../src/attributeWeightedGraph.cpp"
+Finished building: ../src/attributeWeightedGraph.cpp
+ 
+Building file: ../src/q4.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/q4.d" -MT"src/q4.o" -o "src/q4.o" "../src/q4.cpp"
+Finished building: ../src/q4.cpp
+ 
+Building target: q4
+Invoking: GCC C++ Linker
+g++  -o "q4"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/attributeGraph1.o ./src/attributeGraph2.o ./src/attributeWeightedGraph.o ./src/attributedNode1.o ./src/attributedNode2.o ./src/q4.o   
+Finished building target: q4
+ 
+18:09:44 **** Incremental Build of configuration Debug for project q4 ****
+make all 
+Building file: ../src/q4.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/q4.d" -MT"src/q4.o" -o "src/q4.o" "../src/q4.cpp"
+Finished building: ../src/q4.cpp
+ 
+Building target: q4
+Invoking: GCC C++ Linker
+g++  -o "q4"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/attributeGraph1.o ./src/attributeGraph2.o ./src/attributeWeightedGraph.o ./src/attributedNode1.o ./src/attributedNode2.o ./src/q4.o   
+Finished building target: q4
+ 
+16:17:03 **** Build of configuration Debug for project q4 ****
+make all 
+Building file: ../src/attributeWeightedGraph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/attributeWeightedGraph.d" -MT"src/attributeWeightedGraph.o" -o "src/attributeWeightedGraph.o" "../src/attributeWeightedGraph.cpp"
+Finished building: ../src/attributeWeightedGraph.cpp
+ 
+Building file: ../src/q4.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/q4.d" -MT"src/q4.o" -o "src/q4.o" "../src/q4.cpp"
+Finished building: ../src/q4.cpp
+ 
+Building target: q4
+Invoking: GCC C++ Linker
+g++  -o "q4"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/attributeGraph1.o ./src/attributeGraph2.o ./src/attributeWeightedGraph.o ./src/attributedNode1.o ./src/attributedNode2.o ./src/q4.o   
+Finished building target: q4
+ 
+16:18:12 **** Incremental Build of configuration Debug for project q4 ****
+make all 
+make: Nothing to be done for 'all'.
+16:19:28 **** Incremental Build of configuration Debug for project q4 ****
+make all 
+Building file: ../src/q4.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/q4.d" -MT"src/q4.o" -o "src/q4.o" "../src/q4.cpp"
+Finished building: ../src/q4.cpp
+ 
+Building target: q4
+Invoking: GCC C++ Linker
+g++  -o "q4"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/attributeGraph1.o ./src/attributeGraph2.o ./src/attributeWeightedGraph.o ./src/attributedNode1.o ./src/attributedNode2.o ./src/q4.o   
+Finished building target: q4
+ 
+16:22:03 **** Build of configuration Debug for project q1 ****
+make all 
+Building file: ../src/SimpleGraph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleGraph.d" -MT"src/SimpleGraph.o" -o "src/SimpleGraph.o" "../src/SimpleGraph.cpp"
+Finished building: ../src/SimpleGraph.cpp
+ 
+Building file: ../src/q1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/q1.d" -MT"src/q1.o" -o "src/q1.o" "../src/q1.cpp"
+Finished building: ../src/q1.cpp
+ 
+Building target: q1
+Invoking: GCC C++ Linker
+g++  -o "q1"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/q1.o   
+Finished building target: q1
+ 
+16:22:17 **** Incremental Build of configuration Debug for project q1 ****
+make all 
+Building file: ../src/q1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/q1.d" -MT"src/q1.o" -o "src/q1.o" "../src/q1.cpp"
+Finished building: ../src/q1.cpp
+ 
+Building target: q1
+Invoking: GCC C++ Linker
+g++  -o "q1"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/q1.o   
+Finished building target: q1
+ 
+16:22:45 **** Incremental Build of configuration Debug for project q1 ****
+make all 
+Building file: ../src/q1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/q1.d" -MT"src/q1.o" -o "src/q1.o" "../src/q1.cpp"
+Finished building: ../src/q1.cpp
+ 
+Building target: q1
+Invoking: GCC C++ Linker
+g++  -o "q1"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/q1.o   
+Finished building target: q1
+ 
+16:24:01 **** Incremental Build of configuration Debug for project q1 ****
+make all 
+Building file: ../src/q1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/q1.d" -MT"src/q1.o" -o "src/q1.o" "../src/q1.cpp"
+Finished building: ../src/q1.cpp
+ 
+Building target: q1
+Invoking: GCC C++ Linker
+g++  -o "q1"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/q1.o   
+Finished building target: q1
+ 
+16:24:33 **** Incremental Build of configuration Debug for project q1 ****
+make all 
+Building file: ../src/q1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/q1.d" -MT"src/q1.o" -o "src/q1.o" "../src/q1.cpp"
+Finished building: ../src/q1.cpp
+ 
+Building target: q1
+Invoking: GCC C++ Linker
+g++  -o "q1"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/q1.o   
+Finished building target: q1
+ 
+16:25:58 **** Incremental Build of configuration Debug for project q1 ****
+make all 
+Building file: ../src/SimpleNode.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleNode.d" -MT"src/SimpleNode.o" -o "src/SimpleNode.o" "../src/SimpleNode.cpp"
+Finished building: ../src/SimpleNode.cpp
+ 
+Building target: q1
+Invoking: GCC C++ Linker
+g++  -o "q1"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/q1.o   
+Finished building target: q1
+ 
+16:26:27 **** Incremental Build of configuration Debug for project q1 ****
+make all 
+Building file: ../src/q1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/q1.d" -MT"src/q1.o" -o "src/q1.o" "../src/q1.cpp"
+Finished building: ../src/q1.cpp
+ 
+Building target: q1
+Invoking: GCC C++ Linker
+g++  -o "q1"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/q1.o   
+Finished building target: q1
+ 
+16:26:48 **** Incremental Build of configuration Debug for project q1 ****
+make all 
+Building file: ../src/q1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/q1.d" -MT"src/q1.o" -o "src/q1.o" "../src/q1.cpp"
+Finished building: ../src/q1.cpp
+ 
+Building target: q1
+Invoking: GCC C++ Linker
+g++  -o "q1"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/q1.o   
+Finished building target: q1
+ 
+16:28:14 **** Incremental Build of configuration Debug for project q1 ****
+make all 
+Building file: ../src/SimpleNode.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleNode.d" -MT"src/SimpleNode.o" -o "src/SimpleNode.o" "../src/SimpleNode.cpp"
+Finished building: ../src/SimpleNode.cpp
+ 
+Building file: ../src/q1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/q1.d" -MT"src/q1.o" -o "src/q1.o" "../src/q1.cpp"
+Finished building: ../src/q1.cpp
+ 
+Building target: q1
+Invoking: GCC C++ Linker
+g++  -o "q1"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/q1.o   
+Finished building target: q1
+ 
+16:28:35 **** Incremental Build of configuration Debug for project q1 ****
+make all 
+Building file: ../src/q1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/q1.d" -MT"src/q1.o" -o "src/q1.o" "../src/q1.cpp"
+Finished building: ../src/q1.cpp
+ 
+Building target: q1
+Invoking: GCC C++ Linker
+g++  -o "q1"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/q1.o   
+Finished building target: q1
+ 
+16:29:23 **** Incremental Build of configuration Debug for project q1 ****
+make all 
+Building file: ../src/SimpleNode.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleNode.d" -MT"src/SimpleNode.o" -o "src/SimpleNode.o" "../src/SimpleNode.cpp"
+Finished building: ../src/SimpleNode.cpp
+ 
+Building file: ../src/q1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/q1.d" -MT"src/q1.o" -o "src/q1.o" "../src/q1.cpp"
+Finished building: ../src/q1.cpp
+ 
+Building target: q1
+Invoking: GCC C++ Linker
+g++  -o "q1"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/q1.o   
+Finished building target: q1
+ 
+16:45:17 **** Incremental Build of configuration Debug for project q1 ****
+make all 
+Building file: ../src/q1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/q1.d" -MT"src/q1.o" -o "src/q1.o" "../src/q1.cpp"
+Finished building: ../src/q1.cpp
+ 
+Building target: q1
+Invoking: GCC C++ Linker
+g++  -o "q1"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/q1.o   
+Finished building target: q1
+ 
+16:46:32 **** Incremental Build of configuration Debug for project q1 ****
+make all 
+Building file: ../src/SimpleNode.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleNode.d" -MT"src/SimpleNode.o" -o "src/SimpleNode.o" "../src/SimpleNode.cpp"
+Finished building: ../src/SimpleNode.cpp
+ 
+Building target: q1
+Invoking: GCC C++ Linker
+g++  -o "q1"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/q1.o   
+Finished building target: q1
+ 
+16:46:50 **** Incremental Build of configuration Debug for project q1 ****
+make all 
+Building file: ../src/SimpleNode.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleNode.d" -MT"src/SimpleNode.o" -o "src/SimpleNode.o" "../src/SimpleNode.cpp"
+Finished building: ../src/SimpleNode.cpp
+ 
+Building target: q1
+Invoking: GCC C++ Linker
+g++  -o "q1"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/q1.o   
+Finished building target: q1
+ 
+16:47:29 **** Incremental Build of configuration Debug for project q1 ****
+make all 
+Building file: ../src/SimpleNode.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleNode.d" -MT"src/SimpleNode.o" -o "src/SimpleNode.o" "../src/SimpleNode.cpp"
+Finished building: ../src/SimpleNode.cpp
+ 
+Building target: q1
+Invoking: GCC C++ Linker
+g++  -o "q1"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/q1.o   
+Finished building target: q1
+ 
+16:47:42 **** Incremental Build of configuration Debug for project q1 ****
+make all 
+Building file: ../src/SimpleNode.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleNode.d" -MT"src/SimpleNode.o" -o "src/SimpleNode.o" "../src/SimpleNode.cpp"
+Finished building: ../src/SimpleNode.cpp
+ 
+Building target: q1
+Invoking: GCC C++ Linker
+g++  -o "q1"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/q1.o   
+Finished building target: q1
+ 
+16:49:00 **** Incremental Build of configuration Debug for project q1 ****
+make all 
+Building file: ../src/SimpleGraph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleGraph.d" -MT"src/SimpleGraph.o" -o "src/SimpleGraph.o" "../src/SimpleGraph.cpp"
+Finished building: ../src/SimpleGraph.cpp
+ 
+Building target: q1
+Invoking: GCC C++ Linker
+g++  -o "q1"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/q1.o   
+Finished building target: q1
+ 
+16:50:35 **** Incremental Build of configuration Debug for project q1 ****
+make all 
+Building file: ../src/SimpleGraph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleGraph.d" -MT"src/SimpleGraph.o" -o "src/SimpleGraph.o" "../src/SimpleGraph.cpp"
+Finished building: ../src/SimpleGraph.cpp
+ 
+Building file: ../src/SimpleNode.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleNode.d" -MT"src/SimpleNode.o" -o "src/SimpleNode.o" "../src/SimpleNode.cpp"
+Finished building: ../src/SimpleNode.cpp
+ 
+Building target: q1
+Invoking: GCC C++ Linker
+g++  -o "q1"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/q1.o   
+Finished building target: q1
+ 
+16:51:52 **** Incremental Build of configuration Debug for project q1 ****
+make all 
+Building file: ../src/SimpleNode.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleNode.d" -MT"src/SimpleNode.o" -o "src/SimpleNode.o" "../src/SimpleNode.cpp"
+Finished building: ../src/SimpleNode.cpp
+ 
+Building target: q1
+Invoking: GCC C++ Linker
+g++  -o "q1"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/q1.o   
+Finished building target: q1
+ 
+16:53:38 **** Incremental Build of configuration Debug for project q1 ****
+make all 
+Building file: ../src/SimpleNode.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleNode.d" -MT"src/SimpleNode.o" -o "src/SimpleNode.o" "../src/SimpleNode.cpp"
+Finished building: ../src/SimpleNode.cpp
+ 
+Building target: q1
+Invoking: GCC C++ Linker
+g++  -o "q1"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/q1.o   
+Finished building target: q1
+ 
+16:54:11 **** Incremental Build of configuration Debug for project q1 ****
+make all 
+Building file: ../src/SimpleNode.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleNode.d" -MT"src/SimpleNode.o" -o "src/SimpleNode.o" "../src/SimpleNode.cpp"
+Finished building: ../src/SimpleNode.cpp
+ 
+Building target: q1
+Invoking: GCC C++ Linker
+g++  -o "q1"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/q1.o   
+Finished building target: q1
+ 
+16:54:25 **** Incremental Build of configuration Debug for project q1 ****
+make all 
+Building file: ../src/SimpleNode.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleNode.d" -MT"src/SimpleNode.o" -o "src/SimpleNode.o" "../src/SimpleNode.cpp"
+Finished building: ../src/SimpleNode.cpp
+ 
+Building target: q1
+Invoking: GCC C++ Linker
+g++  -o "q1"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/q1.o   
+Finished building target: q1
+ 
+16:59:50 **** Incremental Build of configuration Debug for project q1 ****
+make all 
+Building file: ../src/SimpleNode.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleNode.d" -MT"src/SimpleNode.o" -o "src/SimpleNode.o" "../src/SimpleNode.cpp"
+Finished building: ../src/SimpleNode.cpp
+ 
+Building target: q1
+Invoking: GCC C++ Linker
+g++  -o "q1"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/q1.o   
+Finished building target: q1
+ 
+17:00:08 **** Incremental Build of configuration Debug for project q1 ****
+make all 
+Building file: ../src/SimpleNode.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleNode.d" -MT"src/SimpleNode.o" -o "src/SimpleNode.o" "../src/SimpleNode.cpp"
+Finished building: ../src/SimpleNode.cpp
+ 
+Building target: q1
+Invoking: GCC C++ Linker
+g++  -o "q1"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/q1.o   
+Finished building target: q1
+ 
+20:26:09 **** Incremental Build of configuration Debug for project q1 ****
+make all 
+Building file: ../src/SimpleNode.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleNode.d" -MT"src/SimpleNode.o" -o "src/SimpleNode.o" "../src/SimpleNode.cpp"
+Finished building: ../src/SimpleNode.cpp
+ 
+Building target: q1
+Invoking: GCC C++ Linker
+g++  -o "q1"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/q1.o   
+Finished building target: q1
+ 
+20:33:38 **** Build of configuration Debug for project q2 ****
+make all 
+Building file: ../src/SimpleNode.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleNode.d" -MT"src/SimpleNode.o" -o "src/SimpleNode.o" "../src/SimpleNode.cpp"
+Finished building: ../src/SimpleNode.cpp
+ 
+Building file: ../src/attributeGraph1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/attributeGraph1.d" -MT"src/attributeGraph1.o" -o "src/attributeGraph1.o" "../src/attributeGraph1.cpp"
+Finished building: ../src/attributeGraph1.cpp
+ 
+Building file: ../src/q2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/q2.d" -MT"src/q2.o" -o "src/q2.o" "../src/q2.cpp"
+Finished building: ../src/q2.cpp
+ 
+Building target: q2
+Invoking: GCC C++ Linker
+g++  -o "q2"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/attributeGraph1.o ./src/attributedNode1.o ./src/q2.o   
+Finished building target: q2
+ 
+20:34:47 **** Incremental Build of configuration Debug for project q2 ****
+make all 
+Building file: ../src/SimpleNode.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleNode.d" -MT"src/SimpleNode.o" -o "src/SimpleNode.o" "../src/SimpleNode.cpp"
+Finished building: ../src/SimpleNode.cpp
+ 
+Building target: q2
+Invoking: GCC C++ Linker
+g++  -o "q2"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/attributeGraph1.o ./src/attributedNode1.o ./src/q2.o   
+Finished building target: q2
+ 
+20:36:55 **** Build of configuration Debug for project q3 ****
+make all 
+Building file: ../src/SimpleNode.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleNode.d" -MT"src/SimpleNode.o" -o "src/SimpleNode.o" "../src/SimpleNode.cpp"
+Finished building: ../src/SimpleNode.cpp
+ 
+Building file: ../src/q3.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/q3.d" -MT"src/q3.o" -o "src/q3.o" "../src/q3.cpp"
+Finished building: ../src/q3.cpp
+ 
+Building target: q3
+Invoking: GCC C++ Linker
+g++  -o "q3"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/attributeGraph2.o ./src/attributedNode2.o ./src/q3.o   
+Finished building target: q3
+ 
+20:37:52 **** Incremental Build of configuration Debug for project q3 ****
+make all 
+Building file: ../src/attributeGraph2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/attributeGraph2.d" -MT"src/attributeGraph2.o" -o "src/attributeGraph2.o" "../src/attributeGraph2.cpp"
+Finished building: ../src/attributeGraph2.cpp
+ 
+Building target: q3
+Invoking: GCC C++ Linker
+g++  -o "q3"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/attributeGraph2.o ./src/attributedNode2.o ./src/q3.o   
+Finished building target: q3
+ 
+20:42:46 **** Incremental Build of configuration Debug for project q3 ****
+make all 
+Building file: ../src/attributeGraph2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/attributeGraph2.d" -MT"src/attributeGraph2.o" -o "src/attributeGraph2.o" "../src/attributeGraph2.cpp"
+Finished building: ../src/attributeGraph2.cpp
+ 
+Building target: q3
+Invoking: GCC C++ Linker
+g++  -o "q3"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/attributeGraph2.o ./src/attributedNode2.o ./src/q3.o   
+Finished building target: q3
+ 
+20:47:32 **** Incremental Build of configuration Debug for project q3 ****
+make all 
+Building file: ../src/attributeGraph2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/attributeGraph2.d" -MT"src/attributeGraph2.o" -o "src/attributeGraph2.o" "../src/attributeGraph2.cpp"
+Finished building: ../src/attributeGraph2.cpp
+ 
+Building target: q3
+Invoking: GCC C++ Linker
+g++  -o "q3"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/attributeGraph2.o ./src/attributedNode2.o ./src/q3.o   
+Finished building target: q3
+ 
+20:52:13 **** Incremental Build of configuration Debug for project q4 ****
+make all 
+Building file: ../src/SimpleNode.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleNode.d" -MT"src/SimpleNode.o" -o "src/SimpleNode.o" "../src/SimpleNode.cpp"
+Finished building: ../src/SimpleNode.cpp
+ 
+Building file: ../src/attributeGraph2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/attributeGraph2.d" -MT"src/attributeGraph2.o" -o "src/attributeGraph2.o" "../src/attributeGraph2.cpp"
+Finished building: ../src/attributeGraph2.cpp
+ 
+Building file: ../src/q4.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/q4.d" -MT"src/q4.o" -o "src/q4.o" "../src/q4.cpp"
+Finished building: ../src/q4.cpp
+ 
+Building target: q4
+Invoking: GCC C++ Linker
+g++  -o "q4"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/attributeGraph1.o ./src/attributeGraph2.o ./src/attributeWeightedGraph.o ./src/attributedNode1.o ./src/attributedNode2.o ./src/q4.o   
+Finished building target: q4
+ 
+20:53:11 **** Incremental Build of configuration Debug for project q4 ****
+make all 
+Building file: ../src/q4.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/q4.d" -MT"src/q4.o" -o "src/q4.o" "../src/q4.cpp"
+Finished building: ../src/q4.cpp
+ 
+Building target: q4
+Invoking: GCC C++ Linker
+g++  -o "q4"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/attributeGraph1.o ./src/attributeGraph2.o ./src/attributeWeightedGraph.o ./src/attributedNode1.o ./src/attributedNode2.o ./src/q4.o   
+Finished building target: q4
+ 
+21:00:25 **** Incremental Build of configuration Debug for project q4 ****
+make all 
+Building file: ../src/SimpleGraph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleGraph.d" -MT"src/SimpleGraph.o" -o "src/SimpleGraph.o" "../src/SimpleGraph.cpp"
+Finished building: ../src/SimpleGraph.cpp
+ 
+Building file: ../src/attributeGraph1.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/attributeGraph1.d" -MT"src/attributeGraph1.o" -o "src/attributeGraph1.o" "../src/attributeGraph1.cpp"
+Finished building: ../src/attributeGraph1.cpp
+ 
+Building file: ../src/attributeGraph2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/attributeGraph2.d" -MT"src/attributeGraph2.o" -o "src/attributeGraph2.o" "../src/attributeGraph2.cpp"
+Finished building: ../src/attributeGraph2.cpp
+ 
+Building file: ../src/attributeWeightedGraph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/attributeWeightedGraph.d" -MT"src/attributeWeightedGraph.o" -o "src/attributeWeightedGraph.o" "../src/attributeWeightedGraph.cpp"
+Finished building: ../src/attributeWeightedGraph.cpp
+ 
+Building file: ../src/q4.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/q4.d" -MT"src/q4.o" -o "src/q4.o" "../src/q4.cpp"
+Finished building: ../src/q4.cpp
+ 
+Building target: q4
+Invoking: GCC C++ Linker
+g++  -o "q4"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/attributeGraph1.o ./src/attributeGraph2.o ./src/attributeWeightedGraph.o ./src/attributedNode1.o ./src/attributedNode2.o ./src/q4.o   
+Finished building target: q4
+ 
+10:29:26 **** Incremental Build of configuration Debug for project q4 ****
+make all 
+Building file: ../src/attributeWeightedGraph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/attributeWeightedGraph.d" -MT"src/attributeWeightedGraph.o" -o "src/attributeWeightedGraph.o" "../src/attributeWeightedGraph.cpp"
+Finished building: ../src/attributeWeightedGraph.cpp
+ 
+Building file: ../src/q4.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/q4.d" -MT"src/q4.o" -o "src/q4.o" "../src/q4.cpp"
+Finished building: ../src/q4.cpp
+ 
+Building target: q4
+Invoking: GCC C++ Linker
+g++  -o "q4"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/attributeGraph1.o ./src/attributeGraph2.o ./src/attributeWeightedGraph.o ./src/attributedNode1.o ./src/attributedNode2.o ./src/q4.o   
+Finished building target: q4
+ 
+10:32:02 **** Incremental Build of configuration Debug for project q4 ****
+make all 
+Building file: ../src/attributeWeightedGraph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/attributeWeightedGraph.d" -MT"src/attributeWeightedGraph.o" -o "src/attributeWeightedGraph.o" "../src/attributeWeightedGraph.cpp"
+Finished building: ../src/attributeWeightedGraph.cpp
+ 
+Building target: q4
+Invoking: GCC C++ Linker
+g++  -o "q4"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/attributeGraph1.o ./src/attributeGraph2.o ./src/attributeWeightedGraph.o ./src/attributedNode1.o ./src/attributedNode2.o ./src/q4.o   
+Finished building target: q4
+ 
+10:38:19 **** Incremental Build of configuration Debug for project q4 ****
+make all 
+Building file: ../src/attributeWeightedGraph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/attributeWeightedGraph.d" -MT"src/attributeWeightedGraph.o" -o "src/attributeWeightedGraph.o" "../src/attributeWeightedGraph.cpp"
+Finished building: ../src/attributeWeightedGraph.cpp
+ 
+Building target: q4
+Invoking: GCC C++ Linker
+g++  -o "q4"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/attributeGraph1.o ./src/attributeGraph2.o ./src/attributeWeightedGraph.o ./src/attributedNode1.o ./src/attributedNode2.o ./src/q4.o   
+Finished building target: q4
+ 
+11:00:31 **** Incremental Build of configuration Debug for project q4 ****
+make all 
+Building file: ../src/attributeWeightedGraph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/attributeWeightedGraph.d" -MT"src/attributeWeightedGraph.o" -o "src/attributeWeightedGraph.o" "../src/attributeWeightedGraph.cpp"
+Finished building: ../src/attributeWeightedGraph.cpp
+ 
+Building target: q4
+Invoking: GCC C++ Linker
+g++  -o "q4"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/attributeGraph1.o ./src/attributeGraph2.o ./src/attributeWeightedGraph.o ./src/attributedNode1.o ./src/attributedNode2.o ./src/q4.o   
+Finished building target: q4
+ 
+11:11:49 **** Incremental Build of configuration Debug for project q4 ****
+make all 
+Building file: ../src/attributeWeightedGraph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/attributeWeightedGraph.d" -MT"src/attributeWeightedGraph.o" -o "src/attributeWeightedGraph.o" "../src/attributeWeightedGraph.cpp"
+Finished building: ../src/attributeWeightedGraph.cpp
+ 
+Building target: q4
+Invoking: GCC C++ Linker
+g++  -o "q4"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/attributeGraph1.o ./src/attributeGraph2.o ./src/attributeWeightedGraph.o ./src/attributedNode1.o ./src/attributedNode2.o ./src/q4.o   
+Finished building target: q4
+ 
+11:17:53 **** Incremental Build of configuration Debug for project q4 ****
+make all 
+Building file: ../src/attributeWeightedGraph.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/attributeWeightedGraph.d" -MT"src/attributeWeightedGraph.o" -o "src/attributeWeightedGraph.o" "../src/attributeWeightedGraph.cpp"
+Finished building: ../src/attributeWeightedGraph.cpp
+ 
+Building target: q4
+Invoking: GCC C++ Linker
+g++  -o "q4"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/attributeGraph1.o ./src/attributeGraph2.o ./src/attributeWeightedGraph.o ./src/attributedNode1.o ./src/attributedNode2.o ./src/q4.o   
+Finished building target: q4
+ 

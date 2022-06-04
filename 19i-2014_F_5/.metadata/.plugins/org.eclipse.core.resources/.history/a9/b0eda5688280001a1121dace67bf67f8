@@ -1,0 +1,14 @@
+/*
+ * attributeGraph2.h
+ *
+ *  Created on: Apr 17, 2020
+ *      Author: danyal-faheem
+ */
+
+#ifndef ATTRIBUTEGRAPH2_H_
+#define ATTRIBUTEGRAPH2_H_
+
+class attributeGraph2 {
+};
+
+#endif /* ATTRIBUTEGRAPH2_H_ */

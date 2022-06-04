@@ -1,0 +1,19 @@
+/*
+ * attributedNode2.cpp
+ *
+ *  Created on: Apr 17, 2020
+ *      Author: danyal-faheem
+ */
+
+#include "attributedNode2.h"
+#include<iostream>
+#include<string>
+using namespace std;
+
+attributedNode2::attributedNode2(){
+	profession = location = " ";
+}
+
+attributedNode2::attributedNode2(string p, string l){
+	profession = p;
+}

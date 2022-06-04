@@ -1,0 +1,28 @@
+15:30:38 **** Incremental Build of configuration Debug for project q5 ****
+make all 
+Building file: ../src/Array.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Array.d" -MT"src/Array.o" -o "src/Array.o" "../src/Array.cpp"
+../src/Array.cpp: In member function ‘int& Array::operator[](int)’:
+../src/Array.cpp:53:1: warning: control reaches end of non-void function [-Wreturn-type]
+   53 | }
+      | ^
+../src/Array.cpp: In member function ‘int& Array::operator[](int) const’:
+../src/Array.cpp:58:1: warning: control reaches end of non-void function [-Wreturn-type]
+   58 | }
+      | ^
+Finished building: ../src/Array.cpp
+ 
+Building file: ../src/q5.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/q5.d" -MT"src/q5.o" -o "src/q5.o" "../src/q5.cpp"
+Finished building: ../src/q5.cpp
+ 
+Building target: q5
+Invoking: GCC C++ Linker
+g++  -o "q5"  ./src/Array.o ./src/q5.o   
+Finished building target: q5
+ 
+
+15:30:39 Build Finished. 0 errors, 2 warnings. (took 1s.370ms)
+

@@ -1,0 +1,44 @@
+/*
+ * attributeWeightedGraph.cpp
+ *
+ *  Created on: Apr 17, 2020
+ *      Author: danyal-faheem
+ */
+
+#include "attributeWeightedGraph.h"
+#include "SimpleGraph.h"
+#include<iostream>
+using namespace std;
+
+attributeWeightedGraph::attributeWeightedGraph(){
+	index = 0;
+	weights = new int*[5];
+	for(int counter = 0; counter < 5; counter++){
+		weights[counter] = new int[2];
+	}
+	cout << "AttributeWeightedGraph object created through default constructor\n";
+}
+
+void attributeWeightedGraph::appendWeight(int n1, int n2, int weight){
+	int index1 = 0, index2 = 0;
+		bool check1 = false, check2 = false;
+		for(int counter = 0; counter < attributeGraph1::numNodes; counter++){
+			if(attributeGraph1::allnodes[counter].getid() == n1){
+				index1 = counter;
+				check1 = true;
+			}
+			if(attributeGraph1::allnodes[counter].getid() == n2){
+				index2 = counter;
+				check2 = true;
+			}
+		}
+		if(check1 == false or check2 == false){
+			cout << "\nInvalid Indexes\n" << index1 << index2 << n1 << n2 << endl;
+			return;
+		}
+		else{
+			weights[index] = weight;
+			weights[index][0] = n1;
+			weights[index][2] = n2;
+		}
+}

@@ -1,0 +1,25 @@
+/*
+ * attributeGraph1.cpp
+ *
+ *  Created on: Apr 15, 2020
+ *      Author: danyal-faheem
+ */
+
+#include "attributeGraph1.h"
+#include "SimpleGraph.h"
+#include<iostream>
+using namespace std;
+
+attributeGraph1::attributeGraph1(){
+	arrNode = new attributedNode1[5];
+	for(int counter = 1; counter < 6; counter++){
+		addnode(counter);
+	}
+}
+
+void attributeGraph1::appendAttribute(){
+	for(int counter = 0; counter < numNodes; counter++){
+
+	}
+}
+

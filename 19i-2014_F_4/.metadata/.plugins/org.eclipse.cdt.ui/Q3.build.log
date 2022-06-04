@@ -1,0 +1,20 @@
+14:09:16 **** Incremental Build of configuration Debug for project Q3 ****
+make all 
+Building file: ../src/Matrix.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Matrix.d" -MT"src/Matrix.o" -o "src/Matrix.o" "../src/Matrix.cpp"
+Finished building: ../src/Matrix.cpp
+ 
+Building file: ../src/q3.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/q3.d" -MT"src/q3.o" -o "src/q3.o" "../src/q3.cpp"
+Finished building: ../src/q3.cpp
+ 
+Building target: Q3
+Invoking: GCC C++ Linker
+g++  -o "Q3"  ./src/Matrix.o ./src/q3.o   
+Finished building target: Q3
+ 
+
+14:09:17 Build Finished. 0 errors, 0 warnings. (took 1s.121ms)
+

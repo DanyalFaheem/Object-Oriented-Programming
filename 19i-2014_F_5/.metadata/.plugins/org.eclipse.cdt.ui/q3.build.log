@@ -1,0 +1,15 @@
+20:47:32 **** Incremental Build of configuration Debug for project q3 ****
+make all 
+Building file: ../src/attributeGraph2.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/attributeGraph2.d" -MT"src/attributeGraph2.o" -o "src/attributeGraph2.o" "../src/attributeGraph2.cpp"
+Finished building: ../src/attributeGraph2.cpp
+ 
+Building target: q3
+Invoking: GCC C++ Linker
+g++  -o "q3"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/attributeGraph2.o ./src/attributedNode2.o ./src/q3.o   
+Finished building target: q3
+ 
+
+20:47:33 Build Finished. 0 errors, 0 warnings. (took 870ms)
+

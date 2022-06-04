@@ -1,0 +1,18 @@
+//============================================================================
+// Name        : q1.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+#include"Fraction.h"
+#include <iostream>
+using namespace std;
+
+int main() {
+	Fraction obj(12,8);
+	Fraction obj2(10,4);
+	Fraction obj3(obj+obj2);
+	cout << obj3;
+	return 0;
+}

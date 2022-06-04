@@ -1,0 +1,14 @@
+/*
+ * attributeWeightedGraph.h
+ *
+ *  Created on: Apr 17, 2020
+ *      Author: danyal-faheem
+ */
+
+#ifndef ATTRIBUTEWEIGHTEDGRAPH_H_
+#define ATTRIBUTEWEIGHTEDGRAPH_H_
+
+class attributeWeightedGraph {
+};
+
+#endif /* ATTRIBUTEWEIGHTEDGRAPH_H_ */

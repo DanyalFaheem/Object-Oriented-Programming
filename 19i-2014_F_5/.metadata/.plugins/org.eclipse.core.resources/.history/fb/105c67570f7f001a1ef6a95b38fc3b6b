@@ -1,0 +1,14 @@
+/*
+ * attributedNode1.h
+ *
+ *  Created on: Apr 15, 2020
+ *      Author: danyal-faheem
+ */
+
+#ifndef ATTRIBUTEDNODE1_H_
+#define ATTRIBUTEDNODE1_H_
+
+class attributedNode1 {
+};
+
+#endif /* ATTRIBUTEDNODE1_H_ */

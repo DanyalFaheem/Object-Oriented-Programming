@@ -1,0 +1,65 @@
+/*
+ * attributeGraph1.cpp
+ *
+ *  Created on: Apr 15, 2020
+ *      Author: danyal-faheem
+ */
+
+#include "attributeGraph1.h"
+#include "SimpleGraph.h"
+#include<iostream>
+using namespace std;
+
+attributeGraph1::attributeGraph1(){
+	arrNode = new attributedNode1[5];
+	for(int counter = 1; counter < 6; counter++){
+		addnode(counter);
+	}
+}
+
+void attributeGraph1::appendAttribute(){
+	int temp = 0;
+	char mid;
+	for(int counter = 0; counter < numNodes; counter++){
+		cout << "Enter age for nodeid" << allnodes[counter].getid() << ": ";
+		cin >> temp;
+		arrNode[counter].setAge(temp);
+		cout << "Enter gender(either f or m) for nodeid" << allnodes[counter].getid() << ": ";
+		cin >> mid;
+		arrNode[counter].setGender(mid);
+	}
+}
+
+void attributeGraph1::printneighbor(int id){
+	int index = 0;
+		bool check = false;
+		for(int counter = 0; counter < numNodes; counter++){
+			if(allnodes[counter].getid() == id){
+				index = counter;
+				check = true;
+				break;
+			}
+		}
+		if(check == false){
+			cout << "\nInvalid Index\n";
+			return;
+		}
+		else{
+			SimpleNode* ptr = allnodes[index].getneighbor();
+			cout << "Neighbor of Node with id " << id << " has following:\n";
+			cout << "Number of neighbors: " << allnodes[index].getneighborcount() << endl;
+			for(int counter = 0; counter < allnodes[index].getneighborcount(); counter++){
+				cout << "Neighbor Node id: " << ptr[counter].getid() << endl;
+				cout << "Neighbor Age: " << arrNode[counter].getAge() << endl;
+				cout << "Neighbor Gender: " << arrNode[counter].getGender() << endl;
+			}
+		}
+}
+
+void attributeGraph1::printGraphData(){
+	cout << "Printing all nodes data\n";
+		for(int counter = 0; counter < numNodes; counter++){
+			cout << "Node id: " << allnodes[counter].getid() << endl;
+			printneighbor(allnodes[counter].getid());
+		}
+}

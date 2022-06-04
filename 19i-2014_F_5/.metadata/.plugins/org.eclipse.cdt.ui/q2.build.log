@@ -1,0 +1,15 @@
+20:34:47 **** Incremental Build of configuration Debug for project q2 ****
+make all 
+Building file: ../src/SimpleNode.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/SimpleNode.d" -MT"src/SimpleNode.o" -o "src/SimpleNode.o" "../src/SimpleNode.cpp"
+Finished building: ../src/SimpleNode.cpp
+ 
+Building target: q2
+Invoking: GCC C++ Linker
+g++  -o "q2"  ./src/SimpleGraph.o ./src/SimpleNode.o ./src/attributeGraph1.o ./src/attributedNode1.o ./src/q2.o   
+Finished building target: q2
+ 
+
+20:34:48 Build Finished. 0 errors, 0 warnings. (took 919ms)
+
